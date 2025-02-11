@@ -1,19 +1,43 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View ,TextInput,TouchableOpacity} from 'react-native';
+import React,{useState}from 'react';
+import {Text, View,TouchableOpacity ,StyleSheet} from 'react-native';
+const App= ()=>{
+    const [mau,setMau]=useState('white');
+    const colors = ['green', 'blue', 'brown', 'yellow', 'red', 'black'];
 
-const App=()=>{
   return (
-    <View>
-      <TextInput
-        style={{
-          height:50,
-          borderColor:'green',
-          borderWidth:,
-        }}
-        defaultValue='Hello, world'
-      />
+    <View style={[styles.container, { backgroundColor: mau }]}>
+      {colors.map((color) => (
+        <TouchableOpacity 
+          key={color} 
+          style={[styles.button, { backgroundColor: color }]}
+          onPress={() => setMau(color)}
+        >
+          <Text style={styles.text}>{color.toUpperCase()}</Text>
+        </TouchableOpacity>
+      ))}
     </View>
-  )
+  );
+};
 
-}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  button: {
+    width: '80%',
+    padding: 15,
+    marginVertical: 5,
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+  text: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+});
+
 export default App;
