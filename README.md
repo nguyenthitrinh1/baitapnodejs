@@ -3,3 +3,4 @@
 ![Screenshot 2025-01-13 211055](https://github.com/user-attachments/assets/c937130e-7f54-4984-9c5e-0b4c8c7d353f)
 
 Bài tập state:![Uploading z6306506030261_05ee96d3e45a31f0d95f9edf2bfb9595.jpg…]()
+Bai tap validation:![Screenshot 2025-02-18 100625](https://github.com/user-attachments/assets/5ad722c7-c361-48e5-8d1f-917fdbe01db6)
