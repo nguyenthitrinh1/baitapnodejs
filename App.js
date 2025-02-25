@@ -1,5 +1,24 @@
 import React from 'react';
-import Login from './bai6';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Login from "./bai6";
+import HomeScreen from "./homscreen";
+
+const Stack = createStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
+
 // import {Text, View,TouchableOpacity ,StyleSheet} from 'react-native';
 // const App= ()=>{
 //     const [mau,setMau]=useState('white');
@@ -41,13 +60,3 @@ import Login from './bai6';
 //   },
 // });
 
-
-function App(){
-  return(
-    <div>
-       <Login />
-    </div>
-   
-  );
-}
-export default App;
