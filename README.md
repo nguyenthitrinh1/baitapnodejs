@@ -5,3 +5,6 @@
 Bài tập state:![z6306506030261_05ee96d3e45a31f0d95f9edf2bfb9595](https://github.com/user-attachments/assets/c97379a0-e3c2-4c30-8ac1-9cc13ac6d4dc)
 
 Bai tap validation:![Screenshot 2025-02-18 100625](https://github.com/user-attachments/assets/5ad722c7-c361-48e5-8d1f-917fdbe01db6)
+Bai tap stack navigation:
+![Screenshot (66)](https://github.com/user-attachments/assets/60e6ec38-ed06-404c-9f11-b54401edc4e5)
+![Screenshot (67)](https://github.com/user-attachments/assets/5fc3d8a5-55fc-4673-adeb-56b24ed31bad)
