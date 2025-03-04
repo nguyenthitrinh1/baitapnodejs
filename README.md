@@ -8,3 +8,7 @@ Bai tap validation:![Screenshot 2025-02-18 100625](https://github.com/user-attac
 Bai tap stack navigation:
 ![Screenshot (66)](https://github.com/user-attachments/assets/60e6ec38-ed06-404c-9f11-b54401edc4e5)
 ![Screenshot (67)](https://github.com/user-attachments/assets/5fc3d8a5-55fc-4673-adeb-56b24ed31bad)
+TextContent()
+![z6374931841657_5c65c8c0c14628c8fc8047271ead4d4a](https://github.com/user-attachments/assets/772911ea-91e6-43db-bd8e-cb262061379e)
+![z6374931836914_9a7a095d44a877777e1e0e228468bed0](https://github.com/user-attachments/assets/6a217a6f-9c55-4796-805e-009ffac97440)
+![z6374931842210_7a8f061f0e7e565779790e9443b6f761](https://github.com/user-attachments/assets/c881c822-2375-42fe-bb18-5f0c0c87d31c)
