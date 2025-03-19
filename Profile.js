@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { useAuth } from './text';
+import { useAuth } from './useAuthor';
 
 const ProfileComponent = () => {
   const { user, logout } = useAuth();

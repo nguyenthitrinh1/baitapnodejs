@@ -1,24 +1,32 @@
-import React, { createContext, useContext, useState } from 'react';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { useAuth } from './useAuthor';
+import AuthStack from './author';
+import MainStackNavigator from './mainStack';
+import { ActivityIndicator, View } from 'react-native';
 
-const AuthContext = createContext();
+const Router = () => {
+  const { isLoggedIn, loading } = useAuth();
 
-export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  if (loading) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#0000ff" />
+      </View>
+    );
+  }
 
-  const login = (userData) => setUser(userData);
-  const logout = () => setUser(null);
+  console.log('isLoggedIn:', isLoggedIn); // Debugging
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
-      {children} {/* ✅ Đảm bảo children được render đúng */}
-    </AuthContext.Provider>
+    <NavigationContainer>
+      {isLoggedIn ? (
+        <MainStackNavigator />
+      ) : (
+        <AuthStack />
+      )}
+    </NavigationContainer>
   );
 };
 
-export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  return context;
-};
+export default Router;
